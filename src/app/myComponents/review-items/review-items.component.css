@@ -1,0 +1,11 @@
+.reviewbox{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    background-color: skyblue;
+    color: rgb(20, 17, 17);
+   
+}
+.deletebutton{
+background: red;
+}

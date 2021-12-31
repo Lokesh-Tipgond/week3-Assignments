@@ -1,0 +1,8 @@
+<app-add-review (todoAdd)="addTodo($event)"></app-add-review>
+<br>
+<br>
+<div *ngFor="let todo of todos">
+
+        <app-review-items [todo]="todo" (todoDelete)="deleteTodo($event)"></app-review-items>
+
+</div>

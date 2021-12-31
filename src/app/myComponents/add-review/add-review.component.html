@@ -1,0 +1,26 @@
+<div class="Movie-container">
+    <div class="movie-1"> 
+      <img src="https://th.bing.com/th/id/OIP.oU0voeFYhsU1hYCF9px0AwHaEK?w=300&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+      <div>
+          <form  (ngSubmit)="onSubmit()">
+        
+         <label for="">Review : </label>
+      <input type="text" name="review"  [(ngModel)] ="review" >
+      <label for=""> Ratings :</label>
+      <select [(ngModel)] ="rating" name="rating" >
+        <option  value="0">0</option> 
+        <option value="1" >1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>    
+    </select>
+    
+      <button>Submit Review</button>
+    
+    </form>
+    </div>
+    </div>
+    
+     </div>   
+    
