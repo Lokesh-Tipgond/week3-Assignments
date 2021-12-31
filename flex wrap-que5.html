@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Wrap</title>
+        <style>
+            .container{ 
+         width: 99vw;
+         height: 50vh;
+         border: 2px solid black;
+         display: flex;
+         align-content: center;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         }
+         .box-1{ 
+         width: 200px;
+        height: 200px;
+        background: rgb(246, 9, 9);
+     }
+     .box-2{ 
+        width: 200px;
+        height: 200px;
+        background: blue;
+     }
+     .box-3{ 
+        width: 200px;
+        height: 200px;
+        background: rgb(155, 248, 4);
+     }
+     .box-4{ 
+        width: 200px;
+        height: 200px;
+        background: rgb(3, 3, 3);
+     }
+     .box-5{ 
+        width: 200px;
+        height: 200px;
+        background: rgb(216, 84, 8);
+     }
+     .Mobile{ 
+        
+         border: 2px solid black;
+         display: flex;
+         align-content: center;
+         justify-content: space-around;
+         }
+    @media(max-width:360px) and (min-width:360px) {  
+.box-5{
+   
+   background-color: blue;
+    }
+    .box-4{
+
+   background-color: blue;
+    }
+   }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Flex wrap example-1</h1>
+        <div class="container">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+            <div class="box-5"></div>
+            
+        </div>
+        <h1>@Media Query</h1>
+        <div class="Mobile">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+            <div class="box-5"></div>
+            
+        </div>
+    </body>
+</html>
